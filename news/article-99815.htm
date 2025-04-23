@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN">
+
+<head>
+        <link rel="canonical" href="https://free-v2raynode.github.io/news/article-99815.htm" />
+    <meta charset="utf-8">
+    <title>利用Host文件实现科学上网的详细指南</title>
+        <meta name="description" content="在现代互联网环境中，科学上网已经成为许多人绕过地域限制、保护隐私和提高网络速度的重要手段。除了使用代理软件、VPN等工具外，利用Host文件进行科学上网也被越来越多的人所采用。Host文件作为一种简单" />
+        <link rel="icon" href="/assets/website/img/clash_verge_node/favicon.ico" type="image/x-icon"/>
+
+    <meta name="author" content="免费V2ray节点 中文网">
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://free-v2raynode.github.io/news/article-99815.htm" />
+    <meta property="og:site_name" content="免费V2ray节点 中文网" />
+    <meta property="og:title" content="利用Host文件实现科学上网的详细指南" />
+    <meta property="og:image" content="https://free-v2raynode.github.io/uploads/20240912-1/b28e7fb4abc3e57ceae123fec7fdc87e.webp" />
+        <meta property="og:release_date" content="2025-04-20T09:01:18" />
+    <meta property="og:updated_time" content="2025-04-20T09:01:18" />
+        <meta property="og:description" content="在现代互联网环境中，科学上网已经成为许多人绕过地域限制、保护隐私和提高网络速度的重要手段。除了使用代理软件、VPN等工具外，利用Host文件进行科学上网也被越来越多的人所采用。Host文件作为一种简单" />
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="applicable-device" content="pc,mobile" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="robots" content="max-image-preview:large" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="利用Host文件实现科学上网的详细指南">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="dns-prefetch" href="https:/www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googleadservices.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://pagead2.googlesyndication.com">
+    <link rel="dns-prefetch" href="https://cm.g.doubleclick.net">
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    
+    <!-- Pe-7 icon -->
+    <link href="/assets/website/css/clash_verge_node/pe-icon-7.css" rel="stylesheet" type="text/css">
+    <!--Slider-->
+    <link rel="stylesheet" href="/assets/website/css/clash_verge_node/owl.carousel.min.css">
+    <link rel="stylesheet" href="/assets/website/css/clash_verge_node/owl.theme.default.min.css">
+    <!-- css -->
+    <link href="/assets/website/css/clash_verge_node/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/assets/website/css/clash_verge_node/style.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/assets/website/css/G.css" />
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KRQ20BH9H5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KRQ20BH9H5');
+</script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3332997411212854"
+     crossorigin="anonymous"></script>
+</head>
+
+<body data-page="detail">
+        <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark align-items-center">
+        <div class="container">
+                        <a class="logo mr-3" href="/">
+                <span>免费V2ray节点</span>
+            </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation"><i class="" data-feather="menu"></i></button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav navbar-center" id="mySidenav">
+                                        <li class="nav-item"><a href="/" class="nav-link">首页</a></li>
+                                        <li class="nav-item"><a href="/paid-subscribe/" class="nav-link">推荐机场</a></li>
+                                        <li class="nav-item"><a href="/news/" class="nav-link">新闻资讯</a></li>
+                                        <li class="nav-item"><a href="/client.htm" class="nav-link">客户端</a></li>
+                                    </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Hero Start -->
+    <section class="hero-1-bg bg-light" style="background-image: url(/assets/website/img/clash_verge_node/hero-1-bg-img.png);padding: 0;" id="home">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6">
+                    <h1 class="hero-1-title font-weight-normal text-dark mb-4">利用Host文件实现科学上网的详细指南</h1>
+                    <p class="text-muted mb-4 pb-3">
+                        <a href="/">首页</a> / <a href="/news/">新闻资讯</a> / 正文
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-10">
+                    <div class="mt-lg-0"><img src="/assets/website/img/clash_verge_node/hero-img.png" alt="" class="img-fluid d-block mx-auto"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
+    <!-- Features Start -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="features-content">
+                <div class="row">
+                    <div class="col-md-9">
+                                        <input type="hidden" id="share-website-info" data-name="Clash Node官网订阅站" data-url="https://clashnode.github.io">
+                <div class="xcblog-blog-detail">
+                    
+<p data-start="23" data-end="256" class="">在现代互联网环境中，科学上网已经成为许多人绕过地域限制、保护隐私和提高网络速度的重要手段。除了使用代理软件、VPN等工具外，利用Host文件进行科学上网也被越来越多的人所采用。Host文件作为一种简单而高效的本地DNS解析工具，通过修改域名到IP地址的映射关系，用户可以更灵活地控制哪些网站需要走代理，哪些可以直接访问，进而提升网络访问的速度和稳定性。本文将详细介绍如何通过Host文件实现科学上网的策略及其配置步骤，帮助您轻松应对网络封锁，享受更自由的互联网体验。</p>
+<h2 data-start="258" data-end="271" class="">什么是Host文件？</h2>
+<p data-start="273" data-end="419" class="">Host文件是一个本地文本文件，用于将域名映射到IP地址。计算机在访问网站时，会首先查找本地的Host文件进行DNS解析，而不是直接请求远程DNS服务器。这意味着，通过修改Host文件中的映射关系，用户可以手动控制哪些网站的流量通过特定的IP地址访问，从而实现绕过网络限制、访问被封锁的网站。</p>
+<p data-start="421" data-end="435" class="">Host文件的默认位置如下：</p>
+<ul data-start="436" data-end="522">
+<li data-start="436" data-end="489" class="" style="">
+<p data-start="438" data-end="489" class=""><strong data-start="438" data-end="449">Windows</strong>：<code data-start="450" data-end="489">C:\Windows\System32\drivers\etc\hosts</code></p>
+</li>
+<li data-start="490" data-end="522" class="" style="">
+<p data-start="492" data-end="522" class=""><strong data-start="492" data-end="509">macOS / Linux</strong>：<code data-start="510" data-end="522">/etc/hosts</code></p>
+</li>
+</ul>
+<p data-start="524" data-end="633" class="">通过修改Host文件，用户能够指定特定的IP地址来绕过一些常见的DNS污染和封锁，尤其对于那些受到地理限制或审查的服务，如YouTube、Facebook、Google等，使用Host文件可以帮助用户直接访问这些网站。</p>
+<h2 data-start="635" data-end="656" class="">为什么使用Host文件进行科学上网？</h2>
+<p data-start="658" data-end="693" class="">使用Host文件进行科学上网有许多优点，其中最明显的包括以下几个方面：</p>
+<h3 data-start="695" data-end="710" class="">1. <strong data-start="702" data-end="710">速度更快</strong></h3>
+<p data-start="711" data-end="782" class="">Host文件通过本地解析域名到IP地址，避免了每次都需要请求远程DNS服务器。相比其他DNS查询方式，这可以大幅度减少解析时间，提高访问速度。</p>
+<h3 data-start="784" data-end="798" class="">2. <strong data-start="791" data-end="798">灵活性</strong></h3>
+<p data-start="799" data-end="867" class="">Host文件允许用户手动指定哪些网站需要通过代理访问，哪些可以直接连接。这样，用户可以非常精确地控制哪些网站走代理，哪些可以走本地网络。</p>
+<h3 data-start="869" data-end="884" class="">3. <strong data-start="876" data-end="884">绕过限制</strong></h3>
+<p data-start="885" data-end="967" class="">有些网站和服务会通过DNS污染、IP封锁等手段进行访问限制。通过修改Host文件，将这些网站的域名映射到可以访问的IP地址，可以帮助用户突破网络封锁，绕过这些限制。</p>
+<h3 data-start="969" data-end="984" class="">4. <strong data-start="976" data-end="984">简单易用</strong></h3>
+<p data-start="985" data-end="1086" class="">与其他科学上网工具如VPN、Shadowsocks相比，Host文件的配置非常简单，不需要额外安装第三方软件，且只需少量配置即可完成。对于不熟悉复杂网络设置的用户来说，Host文件是一个非常简便的选择。</p>
+<h2 data-start="1088" data-end="1108" class="">如何配置Host文件实现科学上网？</h2>
+<p data-start="1110" data-end="1132" class="">配置Host文件并不复杂，以下是详细的步骤：</p>
+<h3 data-start="1134" data-end="1150" class="">步骤1：备份Host文件</h3>
+<p data-start="1151" data-end="1205" class="">在进行任何修改之前，强烈建议您先备份原始的Host文件。这样，如果修改后出现问题，您可以轻松恢复到原始状态。</p>
+<ul data-start="1207" data-end="1308">
+<li data-start="1207" data-end="1246" class="" style="">
+<p data-start="1209" data-end="1246" class=""><strong data-start="1209" data-end="1222">Windows用户</strong>：可以将<code data-start="1226" data-end="1233">hosts</code>文件复制到一个安全的位置。</p>
+</li>
+<li data-start="1247" data-end="1308" class="" style="">
+<p data-start="1249" data-end="1308" class=""><strong data-start="1249" data-end="1266">macOS/Linux用户</strong>：使用命令 <code data-start="1272" data-end="1302">cp /etc/hosts /etc/hosts.bak</code> 进行备份。</p>
+</li>
+</ul>
+<h3 data-start="1310" data-end="1326" class="">步骤2：编辑Host文件</h3>
+<p data-start="1327" data-end="1353" class="">接下来，您需要使用文本编辑器打开并编辑Host文件：</p>
+<ul data-start="1355" data-end="1469">
+<li data-start="1355" data-end="1403" class="" style="">
+<p data-start="1357" data-end="1403" class=""><strong data-start="1357" data-end="1370">Windows用户</strong>：右键点击<code data-start="1375" data-end="1382">hosts</code>文件，选择“以管理员身份运行记事本”打开。</p>
+</li>
+<li data-start="1404" data-end="1469" class="" style="">
+<p data-start="1406" data-end="1469" class=""><strong data-start="1406" data-end="1423">macOS/Linux用户</strong>：使用命令行，输入 <code data-start="1433" data-end="1455">sudo nano /etc/hosts</code> 打开Host文件进行编辑。</p>
+</li>
+</ul>
+<h3 data-start="1471" data-end="1488" class="">步骤3：添加需要的IP映射</h3>
+<p data-start="1489" data-end="1600" class="">在Host文件中，您可以逐行添加域名及其对应的IP地址。例如，假设您想访问<code data-start="1526" data-end="1539">example.com</code>，您需要将该域名映射到指定的IP地址。假设该网站的IP地址为<code data-start="1569" data-end="1583">104.244.42.1</code>，则在Host文件中添加以下内容：</p>
+<pre class="overflow-visible!" data-start="1602" data-end="1637"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]"></div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre!"><span><span>104.244.42.1    example.com
+</span></span></code></div></div></pre>
+<p data-start="1639" data-end="1683" class="">您可以为不同的网站添加类似的条目。例如，您可以通过添加以下内容，指定更多网站的IP地址：</p>
+<pre class="overflow-visible!" data-start="1685" data-end="1754"><div class="contain-inline-size rounded-md border-[0.5px] border-token-border-medium relative bg-token-sidebar-surface-primary"><div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary dark:bg-token-main-surface-secondary select-none rounded-t-[5px]"></div><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-sidebar-surface-primary text-token-text-secondary dark:bg-token-main-surface-secondary flex items-center rounded-sm px-2 font-sans text-xs"><span class="" data-state="closed"></span><span class="" data-state="closed"></span></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre!"><span><span>172.64.200.1    anotherdomain.org
+104.244.42.1    youtube.com
+</span></span></code></div></div></pre>
+<h3 data-start="1756" data-end="1768" class="">步骤4：保存文件</h3>
+<p data-start="1769" data-end="1822" class="">编辑完Host文件后，保存并退出文本编辑器。如果使用的是命令行编辑器（如<code data-start="1805" data-end="1811">nano</code>），在保存文件后退出。</p>
+<h3 data-start="1824" data-end="1839" class="">步骤5：刷新DNS缓存</h3>
+<p data-start="1840" data-end="1897" class="">Host文件修改完成后，您通常需要清除DNS缓存，以使更改生效。根据不同操作系统，刷新DNS缓存的方法也有所不同：</p>
+<ul data-start="1899" data-end="2004">
+<li data-start="1899" data-end="1947" class="" style="">
+<p data-start="1901" data-end="1947" class=""><strong data-start="1901" data-end="1914">Windows用户</strong>：打开命令提示符，输入 <code data-start="1926" data-end="1946">ipconfig /flushdns</code>。</p>
+</li>
+<li data-start="1948" data-end="2004" class="" style="">
+<p data-start="1950" data-end="2004" class=""><strong data-start="1950" data-end="1967">macOS/Linux用户</strong>：输入命令 <code data-start="1973" data-end="2003">sudo dscacheutil -flushcache</code>。</p>
+</li>
+</ul>
+<p data-start="2006" data-end="2047" class="">完成上述步骤后，您就成功配置了Host文件，能够通过指定的IP地址访问相应的网站。</p>
+<h2 data-start="2049" data-end="2069" class="">使用Host文件科学上网的注意事项</h2>
+<p data-start="2071" data-end="2115" class="">虽然通过Host文件进行科学上网非常方便，但仍然需要注意一些细节，确保您的操作安全有效。</p>
+<h3 data-start="2117" data-end="2134" class="">1. <strong data-start="2124" data-end="2134">确保配置正确</strong></h3>
+<p data-start="2135" data-end="2225" class="">Host文件中的格式要求非常严格。如果在文件中添加错误的条目，可能会导致网站无法访问。因此，在编辑Host文件时，一定要确保每一行的格式正确，确保域名与IP地址之间有至少一个空格。</p>
+<h3 data-start="2227" data-end="2247" class="">2. <strong data-start="2234" data-end="2247">定期检查和更新配置</strong></h3>
+<p data-start="2248" data-end="2342" class="">网络环境和IP地址经常发生变化。为了保持科学上网的稳定性，您需要定期检查Host文件中的IP地址，确保它们是最新的。您可以通过一些第三方工具来监测常用网站的IP变化，及时更新Host文件。</p>
+<h3 data-start="2344" data-end="2364" class="">3. <strong data-start="2351" data-end="2364">使用可靠的IP地址</strong></h3>
+<p data-start="2365" data-end="2423" class="">为了确保网络安全，您应该只使用来自可靠来源的IP地址。避免使用不明来源的IP地址，以免遭遇恶意攻击或数据泄露的风险。</p>
+<h3 data-start="2425" data-end="2448" class="">4. <strong data-start="2432" data-end="2448">注意域名与IP地址的匹配</strong></h3>
+<p data-start="2449" data-end="2521" class="">对于一些网站，您可能需要找到多个IP地址并分别映射。例如，某些大网站可能有多个IP地址，您需要将这些地址添加到Host文件中，确保能够稳定访问。</p>
+<h2 data-start="2523" data-end="2532" class="">常见问题解答</h2>
+<h3 data-start="2534" data-end="2561" class="">1. <strong data-start="2541" data-end="2561">如何查找失效的Host文件条目？</strong></h3>
+<p data-start="2562" data-end="2661" class="">如果某些网站无法访问，可能是因为Host文件中的IP地址失效。您可以通过<code data-start="2598" data-end="2604">ping</code>命令测试网站的IP地址是否有效。例如，使用命令 <code data-start="2628" data-end="2650">ping www.example.com</code> 来确认IP是否有效。</p>
+<h3 data-start="2663" data-end="2691" class="">2. <strong data-start="2670" data-end="2691">Host文件是否会被系统自动更新？</strong></h3>
+<p data-start="2692" data-end="2778" class="">一般来说，Host文件中的设置是静态的，系统不会自动更新。然而，一些恶意软件或某些程序可能会修改Host文件，导致您的配置失效。因此，建议定期检查Host文件，以防被篡改。</p>
+<h3 data-start="2780" data-end="2810" class="">3. <strong data-start="2787" data-end="2810">Host文件的修改是否会影响其他用户？</strong></h3>
+<p data-start="2811" data-end="2876" class="">修改Host文件只会影响本机的网络访问，不会影响其他用户。如果您希望在多个设备上实现科学上网，您需要在每台设备上都进行相应的配置。</p>
+<h3 data-start="2878" data-end="2905" class="">4. <strong data-start="2885" data-end="2905">如何删除无效的Host文件条目？</strong></h3>
+<p data-start="2906" data-end="2965" class="">如果某些IP地址不再有效，您可以手动删除Host文件中的相关条目。删除无效条目后，别忘了刷新DNS缓存以确保修改生效。</p>
+<h2 data-start="2967" data-end="2972" class="">结论</h2>
+<p data-start="2974" data-end="3151" class="">通过Host文件实现科学上网是一个简单而高效的方式，它不仅能够提升访问速度，还能帮助用户绕过网络封锁，实现更自由的上网体验。尽管配置过程非常简单，但需要用户具备一定的计算机基础，特别是在编辑和维护Host文件时。只要您保持配置的准确性和及时更新，您就能够享受更加畅快的网络体验。希望本文中的方法与技巧能够帮助您顺利实现科学上网，让上网变得更加自由和快捷。</p>
+<hr data-start="3153" data-end="3156" class="">
+<h3 data-start="3158" data-end="3166" class="">语言点评</h3>
+<p data-start="3168" data-end="3319" class="">这篇文章以详细的步骤和清晰的逻辑，帮助用户理解并实现了如何通过Host文件进行科学上网。文章结构紧凑，内容全面，从基础概念到具体操作步骤，再到常见问题的解答，都进行了充分的阐述。尤其是对于初学者来说，这篇文章非常易懂，操作指导非常实际，细节丰富，能够帮助读者在日常上网中有效绕过网络限制，提升上网体验。</p>                </div>
+                <div class="clearfix"></div>
+                <div class="col-md-12 mt-5">
+                                        <p>上一个：<a href="/news/article-99814.htm">2018年V2Ray免费账号6小时更新机制详解：如何有效获取与使用</a></p>
+                                        <p>下一个：<a href="/news/article-100577.htm">破解难题：小米手机无法使用 V2Ray？全面详解原因与高效解决方案！</a></p>
+                                    </div>
+                                    </div>
+                    <div class="col-md-3">
+                        <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">热门文章</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2"><a href="/news/article-101938.htm" title="深入解析Clash的轻量模式：简洁高效，突破网络限制">深入解析Clash的轻量模式：简洁高效，突破网络限制</a></li>
+                        <li class="py-2"><a href="/news/article-94557.htm" title="C站科学上网全面指南：如何安全连接与高效浏览">C站科学上网全面指南：如何安全连接与高效浏览</a></li>
+                        <li class="py-2"><a href="/news/article-101939.htm" title="全面解析奥盖clash：功能、使用与配置指南">全面解析奥盖clash：功能、使用与配置指南</a></li>
+                        <li class="py-2"><a href="/news/article-98323.htm" title="梅林软件中心的科学上网功能详解：如何突破网络限制，畅享自由上网">梅林软件中心的科学上网功能详解：如何突破网络限制，畅享自由上网</a></li>
+                        <li class="py-2"><a href="/news/article-98322.htm" title="儿童科学上网：如何在安全与教育之间找到平衡">儿童科学上网：如何在安全与教育之间找到平衡</a></li>
+                        <li class="py-2"><a href="/news/article-95389.htm" title="全面解析科学上网：打造自由安全的互联网体验">全面解析科学上网：打造自由安全的互联网体验</a></li>
+                        <li class="py-2"><a href="/news/article-99014.htm" title="手机科学上网：打造稳定畅快网络体验的终极指南">手机科学上网：打造稳定畅快网络体验的终极指南</a></li>
+                        <li class="py-2"><a href="/news/article-94558.htm" title="科学上网：免费翻墙浏览全球互联网的全面指南">科学上网：免费翻墙浏览全球互联网的全面指南</a></li>
+                        <li class="py-2"><a href="/news/article-94630.htm" title="苹果手机科学上网DNS设置详解：突破网络封锁，畅享全球资源">苹果手机科学上网DNS设置详解：突破网络封锁，畅享全球资源</a></li>
+                        <li class="py-2"><a href="/news/article-99814.htm" title="2018年V2Ray免费账号6小时更新机制详解：如何有效获取与使用">2018年V2Ray免费账号6小时更新机制详解：如何有效获取与使用</a></li>
+                    </ul>
+    </div>
+</div>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">归纳</h3>
+    </div>
+    <div class="panel-body">
+        <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
+                        <li class="py-2">
+                <h4><span class="badge" style="float: right;">24</span> <a href="/date/2025-04/" title="2025-04 归档">2025-04</a></h4>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features End -->
+        <!-- Footer Start -->
+    <section class="footer" style="background-image: url(/assets/website/img/clash_verge_node/hero-1-bg-img.png)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                                            <p>
+                                                <a href="/">首页</a> |
+                                                <a href="/paid-subscribe/">推荐机场</a> |
+                                                <a href="/news/">新闻资讯</a> |
+                                                <a href="/client.htm">客户端</a> |
+                                                <a href="/about-us.htm">关于我们</a> |
+                        <a href="/disclaimer.htm">免责申明</a> |
+                        <a href="/privacy.htm">隐私申明</a> |
+                        <a href="/sitemap.xml">网站地图</a>
+                    </p>
+                        <p class="text-white-50 f-15 mb-0">
+                            <a href="/">免费V2ray节点 中文网</a> 版权所有 Powered by WordPress
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer End -->
+    <!-- javascript -->
+    <script src="/assets/website/js/frontend/clash_verge_node/jquery-3.5.1.min.js"></script>
+    <script src="/assets/website/js/frontend/clash_verge_node/bootstrap.bundle.min.js"></script>
+    <script src="/assets/website/js/frontend/clash_verge_node/jquery.easing.min.js"></script>
+    <!-- feather icons -->
+    <script src="/assets/website/js/frontend/clash_verge_node/feather-icons.js"></script>
+    <!-- carousel -->
+    <script src="/assets/website/js/frontend/clash_verge_node/owl.carousel.min.js"></script>
+    <!-- Main Js -->
+    <script src="/assets/website/js/frontend/clash_verge_node/app.js"></script>
+
+    <script src="https://www.freeclashnode.com/assets/js/frontend/invite-url.js"></script><script src="/assets/website/js/frontend/G.js"></script>
+</body>
+
+</html>
