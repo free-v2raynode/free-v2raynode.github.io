@@ -1,4 +1,4 @@
-# 免费V2ray节点 | 3月30日22M/S|免费Singbox节点/Shadowrocket节点/Clash节点/V2ray节点/SSR节点订阅节点  更新时间 2026-03-30 10:09:46
+# 免费V2ray节点 | 4月17日20.4M/S|免费V2ray节点/Clash节点/SSR节点/Singbox节点/Shadowrocket节点订阅节点  更新时间 2026-04-17 09:49:16
 所有免费clash节点都爬取自网络，请勿用于非法用途 。节点地址：<a href="https://free-v2raynode.github.io" target="_blank">点击跳转</a>
 
 ## clash使用教程：
@@ -9,23 +9,23 @@
 
 ### 免费Clash节点订阅链接
 
-- https://free-v2raynode.github.io/uploads/2026/03/0-20260330.yaml
-- https://free-v2raynode.github.io/uploads/2026/03/1-20260330.yaml
-- https://free-v2raynode.github.io/uploads/2026/03/2-20260330.yaml
-- https://free-v2raynode.github.io/uploads/2026/03/3-20260330.yaml
-- https://free-v2raynode.github.io/uploads/2026/03/4-20260330.yaml
+- https://free-v2raynode.github.io/uploads/2026/04/0-20260417.yaml
+- https://free-v2raynode.github.io/uploads/2026/04/1-20260417.yaml
+- https://free-v2raynode.github.io/uploads/2026/04/2-20260417.yaml
+- https://free-v2raynode.github.io/uploads/2026/04/3-20260417.yaml
+- https://free-v2raynode.github.io/uploads/2026/04/4-20260417.yaml
 
 ### 免费V2ray节点订阅链接
 
-- https://free-v2raynode.github.io/uploads/2026/03/0-20260330.txt
-- https://free-v2raynode.github.io/uploads/2026/03/1-20260330.txt
-- https://free-v2raynode.github.io/uploads/2026/03/2-20260330.txt
-- https://free-v2raynode.github.io/uploads/2026/03/3-20260330.txt
-- https://free-v2raynode.github.io/uploads/2026/03/4-20260330.txt
+- https://free-v2raynode.github.io/uploads/2026/04/0-20260417.txt
+- https://free-v2raynode.github.io/uploads/2026/04/1-20260417.txt
+- https://free-v2raynode.github.io/uploads/2026/04/2-20260417.txt
+- https://free-v2raynode.github.io/uploads/2026/04/3-20260417.txt
+- https://free-v2raynode.github.io/uploads/2026/04/4-20260417.txt
 
 ### 免费Sing-box节点订阅链接
 
-- https://free-v2raynode.github.io/uploads/2026/03/20260330.json
+- https://free-v2raynode.github.io/uploads/2026/04/20260417.json
 
 ## 更多Clash节点订阅 ：
 
