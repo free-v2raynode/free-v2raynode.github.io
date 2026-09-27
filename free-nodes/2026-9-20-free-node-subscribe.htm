@@ -293,32 +293,13 @@ Clash测试延迟特指经过Clash代理转发时产生的额外时间，而普�
 <div class="clearfix"></div>
 <div class="col-md-12 mt-5">
         <p>上一个：<a href="/free-nodes/node-share-links-2026-9-19.htm">免费V2ray节点 | 9月19日22M/S|免费Singbox节点/Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点订阅节点</a></p>
+        <p>下一个：<a href="/free-nodes/free-subscribe-node-2026-9-21.htm">免费V2ray节点 | 9月21日19.1M/S|免费Singbox节点/SSR节点/Clash节点/Trojan节点/Shadowrocket节点/V2ray节点订阅节点</a></p>
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan 的伪装域名选择有哪些原则？</h5></div>
+    <div class="panel-heading"><h5>Surfboard 是否支持 Clash 配置？</h5></div>
     <div class="panel-body">
-        伪装域名必须是真实可访问网站，并且证书有效。这样可以让 Trojan 流量看起来像普通 HTTPS 请求，减少被封锁或 DPI 检测风险，确保节点安全和可用性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 是否支持 Vless？</h5></div>
-    <div class="panel-body">
-        目前 Potatso Lite 仅支持 Shadowsocks 和 Vmess 协议，不支持 Vless。但开发者正在逐步扩展功能，未来可能加入更多现代代理协议支持。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何用 systemd 管理 V2Ray/ Sing-box 服务？</h5></div>
-    <div class="panel-body">
-        创建 systemd 单元文件，指定 ExecStart 指令并设置 Restart=on-failure 与合适的 User/Group。启用服务并使用 `systemctl enable` 与 `systemctl start` 管理，便于开机自启与日志集中收集。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Mellow 是否支持自定义 DNS？</h5></div>
-    <div class="panel-body">
-        支持。Mellow 的配置文件中可设置 DNS 服务器地址及模式（如 DoH、DoT）。用户可使用安全 DNS，如 Cloudflare 1.1.1.1 或 Google DNS，以减少污染风险。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Trojan TLS 如何避免被 DPI 检测？</h5></div>
-    <div class="panel-body">
-        通过选择真实可访问域名并使用有效证书，Trojan 流量可完全模拟 HTTPS 请求。隐藏真实流量特征，降低被封锁和 DPI 检测风险，保证节点长期可用。<hr />    </div>
+        Surfboard 是一款支持多种协议的客户端应用，它能够兼容 Clash 的配置文件格式，用户只需导入 YAML 文件即可。该应用以轻量、高速著称，常用于 iOS 和 macOS 系统。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>VMess 的安全性是否优于 Shadowsocks？</h5></div>
@@ -326,19 +307,39 @@ Clash测试延迟特指经过Clash代理转发时产生的额外时间，而普�
         VMess 拥有动态验证机制和更复杂的握手协议，相较于静态密钥的 Shadowsocks 安全性更高。它能有效抵御重放攻击和 DPI 检测，更适合长期使用。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>如何用 systemd 管理 V2Ray/ Sing-box 服务？</h5></div>
+    <div class="panel-body">
+        创建 systemd 单元文件，指定 ExecStart 指令并设置 Restart=on-failure 与合适的 User/Group。启用服务并使用 `systemctl enable` 与 `systemctl start` 管理，便于开机自启与日志集中收集。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>PassWall2 如何定时自动更新节点？</h5></div>
     <div class="panel-body">
         可在计划任务中添加命令 `passwall update` 并设定时间间隔，例如每日凌晨自动更新。这样可确保节点信息实时同步，避免旧节点失效影响连接体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Surfboard 是否支持 Clash 配置？</h5></div>
+    <div class="panel-heading"><h5>Trojan 的伪装域名选择有哪些原则？</h5></div>
     <div class="panel-body">
-        Surfboard 是一款支持多种协议的客户端应用，它能够兼容 Clash 的配置文件格式，用户只需导入 YAML 文件即可。该应用以轻量、高速著称，常用于 iOS 和 macOS 系统。<hr />    </div>
+        伪装域名必须是真实可访问网站，并且证书有效。这样可以让 Trojan 流量看起来像普通 HTTPS 请求，减少被封锁或 DPI 检测风险，确保节点安全和可用性。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray 的 WebSocket + TLS 如何防止流量被检测？</h5></div>
     <div class="panel-body">
         WebSocket + TLS 可将 V2Ray 流量伪装成正常 HTTPS 请求，隐藏真实数据特征，配合域名伪装和策略组使用，可有效绕过封锁，提高节点安全性和连接稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Trojan TLS 如何避免被 DPI 检测？</h5></div>
+    <div class="panel-body">
+        通过选择真实可访问域名并使用有效证书，Trojan 流量可完全模拟 HTTPS 请求。隐藏真实流量特征，降低被封锁和 DPI 检测风险，保证节点长期可用。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 是否支持 Vless？</h5></div>
+    <div class="panel-body">
+        目前 Potatso Lite 仅支持 Shadowsocks 和 Vmess 协议，不支持 Vless。但开发者正在逐步扩展功能，未来可能加入更多现代代理协议支持。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Mellow 是否支持自定义 DNS？</h5></div>
+    <div class="panel-body">
+        支持。Mellow 的配置文件中可设置 DNS 服务器地址及模式（如 DoH、DoT）。用户可使用安全 DNS，如 Cloudflare 1.1.1.1 或 Google DNS，以减少污染风险。<hr />    </div>
 </div>
 <div class="panel panel-default">
     <div class="panel-heading"><h5>Hiddify Next 订阅更新后节点消失，如何恢复？</h5></div>
@@ -391,16 +392,16 @@ Clash测试延迟特指经过Clash代理转发时产生的额外时间，而普�
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-8-30-clash-node-daily-updates.htm" title="免费V2ray节点 | 8月30日18.7M/S|免费Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点订阅节点">免费V2ray节点 | 8月30日18.7M/S|免费Clash节点/V2ray节点/SSR节点/Shadowrocket节点/Singbox节点/Trojan节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-20-free-node-subscribe.htm" title="免费V2ray节点 | 9月20日22.6M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点订阅节点">免费V2ray节点 | 9月20日22.6M/S|免费Clash节点/Shadowrocket节点/V2ray节点/SSR节点/Trojan节点/Singbox节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-10-clash-v2ray-ss-ssr.htm" title="免费V2ray节点 | 8月10日22M/S|免费V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点订阅节点">免费V2ray节点 | 8月10日22M/S|免费V2ray节点/Clash节点/Trojan节点/Shadowrocket节点/Singbox节点/SSR节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-8-16-clash-v2ray-ss-ssr.htm" title="免费V2ray节点 | 8月16日19.5M/S|免费Singbox节点/Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点订阅节点">免费V2ray节点 | 8月16日19.5M/S|免费Singbox节点/Clash节点/SSR节点/V2ray节点/Shadowrocket节点/Trojan节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/2026-9-12-clash-node.htm" title="免费V2ray节点 | 9月12日19.7M/S|免费Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/SSR节点订阅节点">免费V2ray节点 | 9月12日19.7M/S|免费Clash节点/Singbox节点/Trojan节点/Shadowrocket节点/V2ray节点/SSR节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-clash-subscribe-2026-8-27.htm" title="免费V2ray节点 | 8月27日19.1M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点订阅节点">免费V2ray节点 | 8月27日19.1M/S|免费SSR节点/V2ray节点/Shadowrocket节点/Clash节点/Trojan节点/Singbox节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-subscribe-node-2026-8-23.htm" title="免费V2ray节点 | 8月23日21.5M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点/V2ray节点订阅节点">免费V2ray节点 | 8月23日21.5M/S|免费Singbox节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点/V2ray节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/shadowrocket-node-2026-8-13.htm" title="免费V2ray节点 | 8月13日22.7M/S|免费Singbox节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点订阅节点">免费V2ray节点 | 8月13日22.7M/S|免费Singbox节点/Clash节点/SSR节点/Shadowrocket节点/V2ray节点/Trojan节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-9-11.htm" title="免费V2ray节点 | 9月11日22M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Clash节点订阅节点">免费V2ray节点 | 9月11日22M/S|免费Singbox节点/Shadowrocket节点/SSR节点/Trojan节点/V2ray节点/Clash节点订阅节点</a><hr /></li>
-                        <li class="py-2"><a href="/free-nodes/free-clash-subscribe-2026-9-5.htm" title="免费V2ray节点 | 9月5日20.3M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点订阅节点">免费V2ray节点 | 9月5日20.3M/S|免费SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点/Shadowrocket节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-ssr-node-2026-9-25.htm" title="免费V2ray节点 | 9月25日22.1M/S|免费Clash节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点订阅节点">免费V2ray节点 | 9月25日22.1M/S|免费Clash节点/V2ray节点/SSR节点/Trojan节点/Singbox节点/Shadowrocket节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-8-free-node-subscribe.htm" title="免费V2ray节点 | 9月8日19.2M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点/Trojan节点订阅节点">免费V2ray节点 | 9月8日19.2M/S|免费Shadowrocket节点/V2ray节点/Singbox节点/SSR节点/Clash节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-24-clash-node-daily-updates.htm" title="免费V2ray节点 | 8月24日18.9M/S|免费SSR节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点订阅节点">免费V2ray节点 | 8月24日18.9M/S|免费SSR节点/Trojan节点/Clash节点/Singbox节点/Shadowrocket节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-v2ray-subscribe-2026-8-15.htm" title="免费V2ray节点 | 8月15日18.8M/S|免费Trojan节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点订阅节点">免费V2ray节点 | 8月15日18.8M/S|免费Trojan节点/Singbox节点/SSR节点/V2ray节点/Shadowrocket节点/Clash节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/clash-windows-2026-8-17.htm" title="免费V2ray节点 | 8月17日22.6M/S|免费Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点订阅节点">免费V2ray节点 | 8月17日22.6M/S|免费Shadowrocket节点/Trojan节点/Clash节点/V2ray节点/SSR节点/Singbox节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-26-clash-v2ray-ss-ssr.htm" title="免费V2ray节点 | 8月26日19.9M/S|免费SSR节点/Singbox节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点订阅节点">免费V2ray节点 | 8月26日19.9M/S|免费SSR节点/Singbox节点/V2ray节点/Clash节点/Trojan节点/Shadowrocket节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-node-subscribe-links-2026-8-9.htm" title="免费V2ray节点 | 8月9日19.5M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点订阅节点">免费V2ray节点 | 8月9日19.5M/S|免费SSR节点/Clash节点/Shadowrocket节点/Singbox节点/V2ray节点/Trojan节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-8-22-free-v2ray.htm" title="免费V2ray节点 | 8月22日19.9M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点订阅节点">免费V2ray节点 | 8月22日19.9M/S|免费Trojan节点/Shadowrocket节点/Singbox节点/SSR节点/Clash节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/2026-9-26-clash-node.htm" title="免费V2ray节点 | 9月26日20.8M/S|免费Shadowrocket节点/Singbox节点/Clash节点/Trojan节点/SSR节点/V2ray节点订阅节点">免费V2ray节点 | 9月26日20.8M/S|免费Shadowrocket节点/Singbox节点/Clash节点/Trojan节点/SSR节点/V2ray节点订阅节点</a><hr /></li>
+                        <li class="py-2"><a href="/free-nodes/free-v2ray-subscribe-2026-8-19.htm" title="免费V2ray节点 | 8月19日21.4M/S|免费Shadowrocket节点/Trojan节点/SSR节点/Clash节点/Singbox节点/V2ray节点订阅节点">免费V2ray节点 | 8月19日21.4M/S|免费Shadowrocket节点/Trojan节点/SSR节点/Clash节点/Singbox节点/V2ray节点订阅节点</a><hr /></li>
                     </ul>
     </div>
 </div>
@@ -412,7 +413,7 @@ Clash测试延迟特指经过Clash代理转发时产生的额外时间，而普�
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">20</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
+                <h4><span class="badge" style="float: right;">27</span> <a href="/date/2026-09/" title="2026-09 归档">2026-09</a></h4>
             </li>
                         <li class="py-2">
                 <h4><span class="badge" style="float: right;">26</span> <a href="/date/2026-08/" title="2026-08 归档">2026-08</a></h4>
